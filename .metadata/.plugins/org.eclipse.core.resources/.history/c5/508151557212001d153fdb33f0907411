@@ -1,0 +1,29 @@
+import org.openqa.selenium.WebDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class WebdriverManager {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver = WebDriverManager.edgedriver().create();
+		driver.manage().window().maximize();
+		driver.get("https://www.saucedemo.com/");
+		System.out.println("TITLE "+ driver.getTitle());
+		String URL = driver.getCurrentUrl();
+		System.out.println("Site URL "+URL);
+		Thread.sleep(5000);
+		//Avantages
+		//static path use not needed
+		//driver.close or driver.quit not needed
+		//code optimisation
+      //Navigation Commands
+		driver.navigate().back();
+		Thread.sleep(3000);
+		driver.navigate().forward();
+		Thread.sleep(2000);
+		driver.navigate().refresh();
+		Thread.sleep(5000);
+	}
+
+}

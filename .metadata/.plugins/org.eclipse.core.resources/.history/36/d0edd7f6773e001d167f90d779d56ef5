@@ -1,0 +1,20 @@
+package Utilities;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelRead {
+	
+	public ArrayList<String> getData(String TestCase) throws FileNotFoundException
+
+	{
+		ArrayList<String> a = new ArrayList<String>();
+		FileInputStream fil = new FileInputStream("D:\\New folder\\DataDriven.xlsx");
+		XSSFWorkbook wb = new XSSFWorkbook(fil);
+		return null;
+		
+	}
+}

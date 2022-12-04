@@ -1,0 +1,27 @@
+package Insurance;
+
+import org.testng.annotations.Test;
+public class DogInsurance {
+	//Web Mobile API	
+	@Test
+	public void aDogWebLogin()
+	{
+		System.out.println("Dog Insurance WebLogin");
+	}
+	@Test
+	public void bDogWebLogOut()
+	{
+		System.out.println("Dog Insurance WebLogout");
+	}
+	@Test
+	public void cDogMobileLogIn()
+	{
+		System.out.println("Dog Insurance MobileLogIn");
+	}
+	@Test
+	public void  DogMobileLogOut()
+	{
+		System.out.println("Dog Insurance MobileLogout");
+	}
+
+}
